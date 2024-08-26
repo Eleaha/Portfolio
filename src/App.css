@@ -1,0 +1,33 @@
+.footer {
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 3rem;
+	justify-content: space-around;
+}
+.footer-tab {
+	width: 25%;
+	text-decoration: none;
+
+}
+.tab-text {
+	font-size: 1.5rem;
+    margin-top: 0.25rem;
+	text-align: center;
+    font-family: var(--body);
+    font-weight: bold;
+}
+#about-tab {
+    background-color: var(--about);
+}
+#projects-tab {
+    background-color: var(--projects);
+}
+#cv-tab {
+    background-color: var(--cv);
+}
+#contact-tab{
+    background-color: var(--contact);
+}
