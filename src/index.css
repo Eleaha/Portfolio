@@ -19,6 +19,20 @@ h1 {
 	font-family: var(--title);
 }
 
+h2 {
+  font-size: 2rem;
+  font-family: var(--title);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: var(--title);
+}
+
+p {
+  font-family: var(--body);
+}
+
 .space-mono-regular {
   font-family: "Space Mono", monospace;
   font-weight: 400;

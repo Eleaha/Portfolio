@@ -1,7 +1,7 @@
 export function Projects() {
 	return (
-		<main>
-			<h1>Projects</h1>;
-		</main>
+		<div className="page">
+			<h1>Projects</h1>
+		</div>
 	);
 }
