@@ -1,3 +1,4 @@
+/* Footer */
 .footer {
 	position: fixed;
 	bottom: 0;
@@ -10,24 +11,77 @@
 .footer-tab {
 	width: 25%;
 	text-decoration: none;
-
 }
 .tab-text {
 	font-size: 1.5rem;
-    margin-top: 0.25rem;
+	margin-top: 0.25rem;
 	text-align: center;
-    font-family: var(--body);
-    font-weight: bold;
+	font-family: var(--body);
+	font-weight: bold;
 }
 #about-tab {
-    background-color: var(--about);
+	background-color: var(--about);
 }
 #projects-tab {
-    background-color: var(--projects);
+	background-color: var(--projects);
 }
 #cv-tab {
-    background-color: var(--cv);
+	background-color: var(--cv);
 }
-#contact-tab{
-    background-color: var(--contact);
+#contact-tab {
+	background-color: var(--contact);
+}
+
+/* Main page */
+.page {
+	margin: 5%;
+}
+
+/* About page */
+#about-top-section-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#about-text-container {
+	width: 60%;
+}
+
+/* Slideshow */
+.slideshow-frame {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 30vw;
+	height: 30vw;
+	border-radius: 40px;
+}
+
+.slides {
+	white-space: nowrap;
+	transition: ease-in-out 2000ms;
+}
+
+.slide {
+	display: inline-block;
+	width: 30vw;
+	height: 30vw;
+}
+
+.slide-text-frame {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 30vw;
+	height: 2.2rem;
+}
+
+.slide-texts {
+	white-space: nowrap;
+	transition: ease-in-out 2000ms;
+}
+
+.slide-text {
+	display: inline-block;
+	width: 30vw;
+	text-align: center;
 }

@@ -1,0 +1,8 @@
+{
+    "testProject": {
+        "techStack": ["Typescript", "PSQL", "Express", "React"],
+        "imgAddresses": ["/images/test-img.jpeg", "/images/test-img2.jpeg", "/images/test-img3.jpeg"],
+        "dates": "",
+        "description": ""
+    }
+}
