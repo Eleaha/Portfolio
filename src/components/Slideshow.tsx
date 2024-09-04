@@ -1,11 +1,12 @@
-import React from "react";
+
+import { useEffect, useState } from "react";
 import { slideShowProps } from "../interfaces";
 
 export function Slideshow({ images, delay, text = [] }: slideShowProps) {
-	const [imgIndex, setImgIndex] = React.useState(0);
-	const [textIndex, setTextIndex] = React.useState(text!.length - 1);
+	const [imgIndex, setImgIndex] = useState(0);
+	const [textIndex, setTextIndex] = useState(text!.length - 1);
 
-	React.useEffect(() => {
+	useEffect(() => {
 		setTimeout(() => {
 			setImgIndex((prevIndex) =>
 				prevIndex === images.length - 1 ? 0 : prevIndex + 1

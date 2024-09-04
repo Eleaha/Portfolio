@@ -1,6 +1,11 @@
-export function Header() {
+export function Header({ activePage }: any) {
 	return (
-		<header id="header">
+		<header
+			id="header"
+			style={{
+				backgroundImage: `linear-gradient(var(--${activePage}) 40%, rgba(255,0,0,0))`,
+			}}
+		>
 			<h2 id="header-name">Ellie Harrington</h2>
 			<div id="social-icon-wrapper">
 				<a href="https://github.com/Eleaha" target="_blank">

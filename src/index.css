@@ -4,7 +4,8 @@
 	--cv: #BEE0E4;
 	--contact: #CCC2E1;
 	--body: 'Space Mono';
-	--title: 'Krona One'
+	--title: 'Krona One';
+  --colour-transition: 0.8s;
 }
 
 * {
@@ -12,10 +13,6 @@
 	margin: 0;
 	font-size: 16px;
 	box-sizing: border-box;
-}
-
-html {
-  background-color: var(--about);
 }
 
 h1 {
@@ -66,4 +63,3 @@ p {
   font-weight: 400;
   font-style: normal;
 }
-
