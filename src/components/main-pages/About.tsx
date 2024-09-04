@@ -1,9 +1,14 @@
 import { Slideshow } from "../Slideshow";
 import projectData from "../../data/project-index.json"
+import { useEffect } from "react";
 
 const images = projectData["testProject"]["imgAddresses"];
 
-export function About() {
+export function About({ setActivePage }: any) {
+	useEffect(() => {
+		setActivePage("about");
+	}, []);
+
 	return (
 		<div className="page" id="about-page">
 			<div id="about-top-section-wrapper">
@@ -15,7 +20,11 @@ export function About() {
 						interested in.
 					</p>
 				</div>
-				<Slideshow images={images} delay={6000} text={["test3", "test2", "test1"]}/>
+				<Slideshow
+					images={images}
+					delay={6000}
+					text={["test3", "test2", "test1"]}
+				/>
 			</div>
 		</div>
 	);
