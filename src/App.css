@@ -39,8 +39,14 @@
 	justify-content: space-around;
 }
 .footer-tab {
-	width: 25%;
 	text-decoration: none;
+	transition: var(--colour-transition)
+}
+.footer-tab.active{
+	width: 40%;
+}
+.footer-tab.inactive{
+	width: 20%;
 }
 .tab-text {
 	font-size: 1.5rem;
