@@ -6,7 +6,7 @@ export function Contact({ setActivePage }: any) {
 	}, []);
 	return (
 		<div className="page">
-			<h1>Contact</h1>
+			<h1 className="page-title">Contact</h1>
 		</div>
 	);
 }

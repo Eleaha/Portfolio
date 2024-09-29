@@ -6,7 +6,7 @@ export function CV({ setActivePage }: any) {
 	}, []);
 	return (
 		<div className="page">
-			<h1>CV</h1>
+			<h1 className="page-title">CV</h1>
 		</div>
 	);
 }
