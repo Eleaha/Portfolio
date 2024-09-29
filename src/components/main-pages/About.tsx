@@ -1,8 +1,9 @@
-import { Slideshow } from "../Slideshow";
-import projectData from "../../data/project-index.json"
+import { Slideshow } from "../sub-components/Slideshow";
+import projectData from "../../data/project-index.json";
 import { useEffect } from "react";
+import { SlideshowScrollingCaption } from "../slideshow-scrolling-caption";
 
-const images = projectData["testProject"]["imgAddresses"];
+const images: string[] = projectData[0]["imgAddresses"];
 
 export function About({ setActivePage }: any) {
 	useEffect(() => {
@@ -20,11 +21,15 @@ export function About({ setActivePage }: any) {
 						interested in.
 					</p>
 				</div>
-				<Slideshow
-					images={images}
-					delay={6000}
-					text={["test3", "test2", "test1"]}
-				/>
+				<div id="about-ss">
+					<div id="about-ss-img-wrapper">
+						<Slideshow images={images} delay={6000} />
+					</div>
+					<SlideshowScrollingCaption
+						text={["test3", "test2", "test1"]}
+						delay={6000}
+					/>
+				</div>
 			</div>
 		</div>
 	);

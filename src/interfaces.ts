@@ -1,4 +1,5 @@
 export interface Project {
+    name: string;
     techStack: string[];
     imgAddresses: string[];
     dates: string;
@@ -8,5 +9,9 @@ export interface Project {
 export interface slideShowProps {
     images: string[];
     delay: number;
-    text?: string[];
+    // text?: string[];
+}
+
+export interface ProjectCardProps {
+    project: Project
 }

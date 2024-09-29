@@ -1,8 +1,27 @@
-{
-    "testProject": {
-        "techStack": ["Typescript", "PSQL", "Express", "React"],
-        "imgAddresses": ["/images/test-img.jpeg", "/images/test-img2.jpeg", "/images/test-img3.jpeg"],
-        "dates": "",
-        "description": ""
-    }
-}
+[
+	{
+		"name": "test project",
+		"techStack": ["Typescript", "PSQL", "Express", "React"],
+		"imgAddresses": [
+			"/images/test-img.jpeg",
+			"/images/test-img2.jpeg",
+			"/images/test-img3.jpeg"
+		],
+		"dates": "",
+		"description": "A test project, the first test project. Using scrum and agile, did some kanban etc"
+	},
+	{
+		"name": "testProject2",
+		"techStack": ["javascript", "PSQL"],
+		"imgAddresses": ["/images/test-img3.jpeg", "/images/test-img2.jpeg"],
+		"dates": "",
+		"description": "Another test project, the second test project. Using scrum and agile, did some kanban etc even more than the first one"
+	},
+	{
+		"name": "testProject3",
+		"techStack": ["javascript", "PSQL"],
+		"imgAddresses": ["/images/test-img3.jpeg", "/images/test-img2.jpeg"],
+		"dates": "",
+		"description": "Another test project, the second test project. Using scrum and agile, did some kanban etc even more than the first one"
+	}
+]
