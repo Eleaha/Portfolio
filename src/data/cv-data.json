@@ -1,0 +1,102 @@
+{
+	"intro": "Above all, I love making things, solving problems and learning as much as I can, and have found that the perfect outlet for these core drivers is coding. The welcoming community that surrounds tech and the sheer diversity of problems that can be solved using code has made retraining in fullstack development an absolute joy and is an industry I am very excited to get fully immersed in.",
+	"technicalSkills": {
+		"languages": [
+			"JavaScript",
+			"TypeScript",
+			"Node.js and browser as environments"
+		],
+		"testing": [
+			"Unit testing",
+			"Integration testing",
+			"Test driven development (TDD)",
+			"Jest",
+			"Supertest"
+		],
+		"Backend": ["SQL", "PSQL", "noSQL", "MongoDB", "Express"],
+		"Frontend": ["React", "HTML", "CSS", "Lighthouse"],
+		"Hosting": ["Render", "Netlify", "Atlas", "ElephantSQL"],
+		"Soft Skills": [
+			"Paired programming",
+			"Technical communication",
+			"agile and SCRUM methodologies",
+			"Kanban",
+			"Clean code"
+		],
+		"Design": ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Canva"]
+	},
+	"Experience": {
+		"Trainee Fullstack Software Developer": {
+			"where": "Northcoders",
+			"When": "March 2024 to June 2024",
+			"description": [
+				"Northcoders is an intensive 13 week, full time bootcamp which has given me a working understanding of full-stack Javascript development including the fundamentals, good testing practices, designing data structures, working with both relational and non-relational databases, building RESTful API’s, error handling, designing and building responsive, accessible front-end apps using react, html and CSS, and finally, getting everything hosted.",
+				"Core practices such as good Git practices, test driven development, pair programming and Agile/scrum methodologies were implemented from day one so now come naturally.",
+				"An emphasis on self learning and discovery means reading documentation and implementing new technologies is very familiar and an aspect of coding which I find rewarding.",
+				"Projects include a fullstack, user based news app using PSQL, Express and React which allows users to upload and interact with articles, and a personalised film data visualisation service using TypeScript, MongoDB, Express and React."
+			]
+		},
+		"Temp Agency Staff": {
+			"where": "Office Angels",
+			"when": "September 2023 to present",
+			"description": [
+				"The type of roles assigned include administration, facilities management and reception within large companies around Manchester.",
+				"I was awarded the temp of the month award for February on behalf of the agency.",
+				"Adaptability was key in terms of being able to slip straight into a role and take on new tasks or use unfamiliar software and processes, all while clearly communicating new knowledge to clients."
+			]
+		},
+		"Graphic Designer": {
+			"where": "Freelance",
+			"when": "From 2019 to present",
+			"description": [
+				"Since graduating university I’ve worked on a range of small projects in charity and retail sectors.",
+				"The most recent/ongoing project is branding for a vintage retail business based in Leeds.",
+				"This process involves continuous communication with clients, constructing my own briefs, reviewing feedback and implementing changes where needed, and ensuring the project is delivered on time."
+			]
+		},
+		"Events Coordinator": {
+			"where": "The Terrace (Ashdown Phillips)",
+			"when": "June 2022 to September 2023",
+			"description": [
+				"This role centred around creating a premium and flawless experience for clients at every point of contact, including generating leads, answering enquiries, organising external suppliers, room set-up, addressing any technical issues on the day and collecting feedback.",
+				"I had a direct hand as part of a two person team in increasing the venue’s overall occupancy by 15% and enquiry conversions by 28% and receiving next to perfect feedback from all clients.",
+				"Due to a small team size, teamwork and reliability was key to ensure the venue ran smoothly while managing a diverse and complex workload."
+			]
+		},
+		"Store Manager": {
+			"where": "Pop Boutique Leeds",
+			"when": "June 2019 to March 2022",
+			"description": [
+				"I managed a small team within a busy retail environment, gaining experience in team leadership, staff management and training, and dealing with the higher level customer enquiries.",
+				"I was also responsible for managing stock, reporting finances, marketing materials, visual merchandising and general day to day running of the shop.",
+				"By far the most rewarding part of this role was building an enthusiastic, close knit and well motivated team and encouraging the kind of work environment where learning and openness was encouraged."
+			]
+		},
+		"Director": {
+			"where": "Graft Collaborative",
+			"when": "July 2020 to September 2021",
+			"description": [
+				"I used the extra free time over the pandemic to put together a collaborative project that centred around educating children about key workers through activity packs that were distributed to schools around Leeds.",
+				"Experience gained with bid writing, strict budgets and working with funders.",
+				"I also designed a website dedicated to the history and culture in Armley with Squarespace."
+			]
+		}
+	},
+	"Education": {
+		"Falmouth University": {
+			"completed": "2019",
+			"Level": "BA Graphic Design"
+		},
+		"East Norfolk Sixth Form College": {
+			"completed": "2015",
+			"level": "A levels",
+			"subjects": ["Graphic Design - A", "Photography - A", "Chemistry - B"]
+		}
+	},
+	"Hobbies and Interests": [
+		"I attend a coding group twice a month called Code and Stuff which focuses on getting women and non-binary people into tech in a mentor, mentee framework. I hope to be able to move from mentee to mentor soon.",
+		"Anything that involves making something I find very engaging. Knitting, crochet, sewing, jewellery, ceramics and the one that demands the most patience is definitely homebrewing wine.",
+		"I enjoy keeping up to date with astrophysics news, especially anything JWST. I find anything space/physics related very interesting.",
+		"I love vintage clothing and homeware, as well as generally doing my best to live as sustainably as I can."
+	]
+}
