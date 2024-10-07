@@ -10,7 +10,6 @@ export function Footer() {
 
 	useEffect(() => {
 		const currentPath = window.location.pathname;
-		console.log(currentPath);
 		if (currentPath === "/") {
 			setActiveTab("About");
 		} else if (currentPath === "/cv") {
