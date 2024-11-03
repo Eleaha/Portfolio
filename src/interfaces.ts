@@ -29,8 +29,15 @@ export interface Role {
 }
 
 export interface Education {
-    where: string;
-    completed: number;
-    level: string;
-    subjects?: string[]
+	where: string;
+	completed: number;
+	level: string;
+	subjects?: string[];
+}
+
+export interface FormData {
+	name?: string;
+	company?: string;
+	email?: string;
+	message?: string;
 }
