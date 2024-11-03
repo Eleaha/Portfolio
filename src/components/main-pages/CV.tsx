@@ -32,7 +32,6 @@ export function CV({ setActivePage }: any) {
 			<div className="cv-section" id="experiences-section">
 				<h2>Experience</h2>
 				{cvData.experience.map((role: Role) => {
-					console.log(role);
 					return (
 						<li>
 							<h3>
