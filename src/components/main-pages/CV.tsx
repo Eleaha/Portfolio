@@ -11,17 +11,26 @@ export function CV({ setActivePage }: any) {
 	return (
 		<div className="page">
 			<h1 className="page-title">CV</h1>
+			<button>
+				<a
+					href="../../../public/Eleanor Harrington CV.pdf"
+					download="Ellie Harrington CV.pdf"
+					className="cv-download"
+				>
+					Download
+				</a>
+			</button>
 			<p>{cvData.intro}</p>
 			<div className="cv-section" id="technical-skills-section">
 				<h2>Technical Skills</h2>
 				<ul>
-					{cvData.technicalSkills.map((skillCategory: SkillCategory) => {
+					{cvData.technicalSkills.map((skillCategory: SkillCategory, index: number) => {
 						return (
-							<li>
+							<li key={index}>
 								<h3>{skillCategory.category}:</h3>
 								<div className="cv-skill-tag-container">
-									{skillCategory.skills.map((skill: string) => {
-										return <TechTag tech={skill} />;
+									{skillCategory.skills.map((skill: string, skillIndex: number) => {
+										return <TechTag key={skillIndex} tech={skill} />;
 									})}
 								</div>
 							</li>
@@ -31,16 +40,16 @@ export function CV({ setActivePage }: any) {
 			</div>
 			<div className="cv-section" id="experiences-section">
 				<h2>Experience</h2>
-				{cvData.experience.map((role: Role) => {
+				{cvData.experience.map((role: Role, index: number) => {
 					return (
-						<li>
+						<li key={index}>
 							<h3>
 								{role.title} - {role.where}
 							</h3>
 							<h4>{role.when}</h4>
 							<ul>
-								{role.description.map((description: string) => {
-									return <li>{description}</li>;
+								{role.description.map((description: string, descriptionIndex: number) => {
+									return <li key={descriptionIndex}>{description}</li>;
 								})}
 							</ul>
 						</li>
@@ -51,17 +60,17 @@ export function CV({ setActivePage }: any) {
 			<div className="cv-section" id="education-section">
 				<h2>Education</h2>
 				<ul>
-					{cvData.education.map((education: Education) => {
+					{cvData.education.map((education: Education, index: number) => {
 						return (
-							<li>
+							<li key={index}>
 								<h3>
 									{education.where} - {education.level}
 								</h3>
 								<h4>Completed {education.completed}</h4>
 								{education.subjects ? (
 									<ul>
-										{education.subjects.map((subject: string) => {
-											return <li>{subject}</li>;
+										{education.subjects.map((subject: string, subjectIndex: number) => {
+											return <li key={subjectIndex}>{subject}</li>;
 										})}
 									</ul>
 								) : null}
@@ -73,8 +82,8 @@ export function CV({ setActivePage }: any) {
 			<div className="cv-section" id="hobbies-and-interests-section">
 				<h2>Hobbies and Interests</h2>
 				<ul>
-					{cvData.hobbiesAndInterests.map((hobby: string) => {
-						return <li>{hobby}</li>;
+					{cvData.hobbiesAndInterests.map((hobby: string, index: number) => {
+						return <li key={index}>{hobby}</li>;
 					})}
 				</ul>
 			</div>

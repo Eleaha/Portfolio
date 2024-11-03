@@ -29,6 +29,15 @@ export function About({ setActivePage }: any) {
 						text={["test3", "test2", "test1"]}
 						delay={6000}
 					/>
+					<button>
+						<a
+							href="../../../public/Eleanor Harrington CV.pdf"
+							download="Ellie Harrington CV.pdf"
+							className="cv-download"
+						>
+							Download CV
+						</a>
+					</button>
 				</div>
 			</div>
 		</div>

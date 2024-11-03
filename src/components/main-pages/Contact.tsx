@@ -10,8 +10,8 @@ export function Contact({ setActivePage }: any) {
 	});
 
 	const [isSending, setIsSending] = useState(false);
-	const [displaySendingOverly, setDisplayOverlay] = useState(true);
-	const [validForm, setValidForm] = useState(true);
+	const [displaySendingOverly, setDisplayOverlay] = useState(false);
+	const [showIsInvalidForm, setShowIsInvalidForm] = useState(false);
 
 	useEffect(() => {
 		setActivePage("contact");
@@ -29,7 +29,7 @@ export function Contact({ setActivePage }: any) {
 		e.preventDefault();
 		try {
 			if (!checkValidForm()) {
-				setValidForm(false);
+				setShowIsInvalidForm(true);
 				Promise.reject();
 			} else {
 				setIsSending(true);
@@ -48,7 +48,7 @@ export function Contact({ setActivePage }: any) {
 					message: "",
 				});
 				setIsSending(false);
-				setValidForm(true);
+				setShowIsInvalidForm(false);
 			}
 		} catch (err) {
 			console.log("uh oh email not sent :(");
@@ -93,7 +93,7 @@ export function Contact({ setActivePage }: any) {
 				<label htmlFor="message">Message *</label>
 				<textarea id="message" value={formData.message} onChange={handleChange} />
 				<input type="submit" value="Submit"></input>
-				{!validForm ? <p>Please fill in all fields marked with *</p> : null}
+				{showIsInvalidForm ? <p>Please fill in all fields marked with *</p> : null}
 			</form>
 		</div>
 	);
