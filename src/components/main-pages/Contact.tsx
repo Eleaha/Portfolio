@@ -9,6 +9,10 @@ export function Contact({ setActivePage }: any) {
 		message: "",
 	});
 
+	const [isSending, setIsSending] = useState(false);
+	const [displaySendingOverly, setDisplayOverlay] = useState(true);
+	const [validForm, setValidForm] = useState(true);
+
 	useEffect(() => {
 		setActivePage("contact");
 	}, []);
@@ -17,16 +21,35 @@ export function Contact({ setActivePage }: any) {
 		setFormData({ ...formData, [e.target.id]: e.target.value });
 	};
 
+	const checkValidForm = () => {
+		return formData.name && formData.email && formData.message;
+	};
+
 	const sendEmail = async (e: any) => {
 		e.preventDefault();
 		try {
-			await emailjs.send(
-				"service_f5vqbw2",
-				"template_nv2ydo9",
-				formData,
-				"0GYLrYXM7mJJwAduX"
-			);
-			console.log("worked!!");
+			if (!checkValidForm()) {
+				setValidForm(false);
+				Promise.reject();
+			} else {
+				setIsSending(true);
+				setDisplayOverlay(true);
+				await emailjs.send(
+					"service_f5vqbw2",
+					"template_nv2ydo9",
+					formData,
+					"0GYLrYXM7mJJwAduX"
+				);
+				console.log("worked!!");
+				setFormData({
+					name: "",
+					company: "",
+					email: "",
+					message: "",
+				});
+				setIsSending(false);
+				setValidForm(true);
+			}
 		} catch (err) {
 			console.log("uh oh email not sent :(");
 		}
@@ -34,9 +57,19 @@ export function Contact({ setActivePage }: any) {
 
 	return (
 		<div className="page">
+			{displaySendingOverly ? (
+				<div id="sending-overlay" className="">
+					<div className="sending-box">
+						<p>{isSending ? "Sending..." : "Sent!"}</p>
+						<button onClick={() => setDisplayOverlay(false)} disabled={isSending}>
+							Ok!
+						</button>
+					</div>
+				</div>
+			) : null}
 			<h1 className="page-title">Contact</h1>
 			<form onSubmit={sendEmail}>
-				<label htmlFor="name">Name</label>
+				<label htmlFor="name">Name*</label>
 				<input
 					type="text"
 					id="name"
@@ -60,6 +93,7 @@ export function Contact({ setActivePage }: any) {
 				<label htmlFor="message">Message *</label>
 				<textarea id="message" value={formData.message} onChange={handleChange} />
 				<input type="submit" value="Submit"></input>
+				{!validForm ? <p>Please fill in all fields marked with *</p> : null}
 			</form>
 		</div>
 	);

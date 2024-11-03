@@ -189,3 +189,22 @@
 .slide-dot.active {
 	background-color: blue;
 }
+
+/* Contact form */
+#sending-overlay{
+	background-color: rgba(255, 0, 0, 0.356);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+}
+
+.sending-box {
+	background-color: red;
+	margin: 40vh auto;
+	width: 20%;
+	height: 20%;
+}
+
+
